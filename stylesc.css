@@ -1,0 +1,170 @@
+body {
+    font-family: outfit;
+    text-align: center;
+    background-color: #ffe4e1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    flex-direction: column;
+    margin-top: -3rem;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    border: 5px solid #ffb6c1; /* Light pink border */
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5); /* Light pink shadow */
+}
+
+h1 {
+    color: #ff699e;
+    font-size: 2em;
+    margin-bottom: 0rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Keep buttons centered */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 20px;
+    position: relative; /* Keeps buttons inside container */
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.music-player {
+    position: fixed; /* Fix the position */
+    top: 10px; /* Adjust the distance from the top */
+    left: 10px; /* Adjust the distance from the left */
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+.choco-img {
+    width: 20%; /* Makes it responsive */
+    height: 20%;
+    max-width: 300px; /* Prevents it from being too large */
+    border-radius: 10px; /* Optional rounded corners */
+    margin-top: 10px;
+}
+
+.container1 {
+    max-width: 45%;
+    max-height: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 5px solid #ffb6c1;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+    overflow: auto; /* Enables scrolling if the content overflows */
+
+    margin: auto;
+    margin-top: 33rem;
+    position: relative; /* Optional if you want to add positioning adjustments */
+}
+
+#yBtn {
+    margin-top: 1rem;
+    background-color: #ff688e;
+    color: white;
+}
+
+#lol {
+    margin-bottom: 1rem;
+}
+
+#aw {
+    color:#ff699e;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .music-player {
+        top: 10px; /* Adjust the distance from the top */
+        left: 10px; /* Adjust the distance from the left */
+    }
+
+    body {
+        font-size: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin-top: -1rem;
+    }
+
+    .container {
+        font-size: 1.2em;
+        width: 75%;
+        margin: auto
+    }
+
+    .container1 {
+        font-size: 1.2em;
+        max-width: 50vh;
+        max-height: 50vh;
+        margin: auto;
+        margin-top: 2.7rem;
+    }
+
+    #yBtn {
+        margin-top: 2rem;
+        background-color: #ff688e;
+        color: white;
+    }
+
+    h1 {
+        margin-bottom: -10px;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
+
+    p {
+        margin: 1rem;
+    }
+
+    .choco-img {
+        width: 40%; /* Makes it responsive */
+        height: 40%;
+        max-width: 300px; /* Prevents it from being too large */
+        border-radius: 10px; /* Optional rounded corners */
+        margin-top: 10px;
+    }
+}
